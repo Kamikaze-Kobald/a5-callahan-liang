@@ -5,7 +5,7 @@ Assignment 5
 - Justin Liang
 
 # Expected Data Structures
-A set could be used to store what lines ran. A queue might also be used to queue each line to be checked. A binary tree can be used in some way when there are if statements.
+A set could be used to store the lines that were ran. It might implement a hash table to decide where the line should be stored after verification. A binary tree might be where the lines/sets are stored.
 
 
 # Initial Code Examination
