@@ -26,7 +26,7 @@ Most of the files are peripheral and handle edge issues like plugins and excepti
 
 
 # Detailed Code Examination
-Placeholder text.
+Judging by earlier examinations, the data.py file seems to make use of a map implemented via a hash table. As previously mentioned, it contains functions that take in data files and "CoverageData" dataclasses, performing operations like combining and tracking. While there are no included data structures, multiple operations like hash\_for\_data\_file and add\_data\_to\_hash reference external hashes and hashing algorithms. The functions in this file are closely connected to the overarching idea of hashing as a method to track the call traces throughout the inputted program.
 
 # Summary
 Placeholder text.
