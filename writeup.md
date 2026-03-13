@@ -10,9 +10,20 @@ A coverage tester likely works by iterating through the list of test functions, 
 
 # Initial Code Examination
 This project is fairly well organized. While not much is detailed in the readme, it links to an external site that contains documentation and use cases. Additionally, the source code is structured, encapsulated, and annotated. 
-Most of the files are peripheral and handle edge issues like plugins and exceptions. The bulk of the program is focused on parsing and program control/specification (i.e. deciding the most efficient method to use).
-{f1}
-{f2}
+
+Most of the files are peripheral and handle edge issues like plugins and exceptions. The bulk of the program is focused on parsing and program control/specification (i.e. deciding the most efficient method to use). The project also contains html files for cover style, a multitude of tests, and bytecode for command line usage.
+
+### Tests:
+- test_core.py: Tests that the coverage core is correctly chosen (I believe the core refers to the method of coverage employed?)
+- test_phystokens.py: Tests that the program's included text tokenizer works correctly.
+
+### Program Files:
+- data.py: This takes several coverage data files (presumably the program it is being run on) and amalgamates it into a mapping of the coverage.
+- collector.py: This uses threading to create "tracers", each of which moves through the program execution and finds the lines covered by each function. It appears to be the main data collection file.
+- multiproc.py: A bit above my pay grade; it appears to alter the runtime code of the program to allow multiprocessing. Not sure why.
+- tracer.pyi: Looks to be a wrapper for tracer.c
+- cmdline.py: Full command-line support, including arguments and a help exception.
+
 
 # Detailed Code Examination
 Placeholder text.
